@@ -6,6 +6,7 @@ import net.minecraft.data.DataOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.DataWriter;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.obfuscate.DontObfuscate;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -16,6 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
+@DontObfuscate
 public abstract class TrimProvider implements DataProvider {
     private final DataOutput.PathResolver trimMaterialPathResolver;
     private final DataOutput.PathResolver trimPatternPathResolver;
