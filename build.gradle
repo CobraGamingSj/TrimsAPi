@@ -67,7 +67,7 @@ jar {
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
+			artifactId = 'tooltrim'
 			from components.java
 		}
 	}
@@ -78,13 +78,13 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
-//		maven {
-//			name = "GitHubPackages"
-//			url = uri("https://maven.pkg.github.com/CobraGamingSj/ToolTrim-API")
-//			credentials {
-//				username = project.findProperty("user") ?: System.getenv("USERNAME")
-//				password = project.findProperty("token") ?: System.getenv("TOKEN")
-//			}
-//		}
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/CobraGamingSj/TrimsAPI")
+			credentials {
+				username = project.findProperty("user") ?: System.getenv("USERNAME")
+				password = project.findProperty("token") ?: System.getenv("TOKEN")
+			}
+		}
 	}
 }

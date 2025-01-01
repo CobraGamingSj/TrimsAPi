@@ -1,17 +1,17 @@
 {
 	"schemaVersion": 1,
-	"id": "trim",
+	"id": "tooltrim",
 	"version": "${version}",
 	"name": "Tool Trims API",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Library mod allowing players to add custom tool trims.",
 	"authors": [
-		"Me!"
+		"CobraGamingSJ"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/trim/icon.png",
 	"environment": "*",
 	"entrypoints": {
